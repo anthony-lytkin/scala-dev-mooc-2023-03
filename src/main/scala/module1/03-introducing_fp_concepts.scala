@@ -93,6 +93,17 @@ object recursion {
    *
    */
 
+  def fib(n: Int): Int = {
+
+    @tailrec
+    def loop(i: Int, current: Int = 0, next: Int = 1): Int = {
+      if (i == 0) current
+      else loop(i - 1, next, next + current)
+    }
+
+    loop(n)
+  }
+
 
 }
 
