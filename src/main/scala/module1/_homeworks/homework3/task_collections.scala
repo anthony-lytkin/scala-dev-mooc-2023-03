@@ -1,4 +1,4 @@
-package module1.homework2
+package module1._homeworks.homework3
 
 object task_collections {
 
