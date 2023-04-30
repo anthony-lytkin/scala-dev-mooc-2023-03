@@ -1,7 +1,11 @@
 import module1._homeworks.homework3.TaskCollections._
 import org.scalatest.flatspec.AnyFlatSpec
 
-class HW3TestModule extends AnyFlatSpec {
+
+/**
+ * Homework 3
+ */
+class CollectionsTest extends AnyFlatSpec {
 
   "check capitalizeIgnoringASCII" should "ok" in {
     assert(capitalizeIgnoringASCII(List("Lorem", "ipsum", "dolor", "sit", "amet")) == List("Lorem", "IPSUM", "DOLOR", "SIT", "AMET"))
