@@ -1,4 +1,4 @@
-package module1.homework1
+package module1._homeworks.homework1
 
 import scala.annotation.tailrec
 
