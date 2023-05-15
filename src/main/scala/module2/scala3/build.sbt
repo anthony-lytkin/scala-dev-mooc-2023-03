@@ -4,5 +4,5 @@ ThisBuild / scalaVersion := "3.0.0"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "collections"
+    name := "scala3-dev-moc-2023-03"
   )
