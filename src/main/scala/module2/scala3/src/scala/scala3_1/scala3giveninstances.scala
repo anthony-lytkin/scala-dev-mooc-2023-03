@@ -1,4 +1,4 @@
-package module2.scala3.src.scala
+package scala3_1
 
 object scala3giveninstances {
   trait Ord[T] {
