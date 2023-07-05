@@ -1,3 +1,5 @@
+package scala.module1
+
 import module1._homeworks.homework4
 import module1._homeworks.homework4.TaskFutureSequence
 import org.scalatest.flatspec.AnyFlatSpec

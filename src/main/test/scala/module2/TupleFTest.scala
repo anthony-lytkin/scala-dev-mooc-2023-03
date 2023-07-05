@@ -1,5 +1,9 @@
+package scala.module2
+
 import module2.homeworks.homework5.TupleF.tupleF
 import org.scalatest.flatspec.AnyFlatSpec
+
+import scala.collection.immutable.{List, Nil}
 
 class TupleFTest extends AnyFlatSpec {
 

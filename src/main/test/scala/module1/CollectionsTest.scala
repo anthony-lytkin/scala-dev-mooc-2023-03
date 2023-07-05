@@ -1,5 +1,9 @@
+package scala.module1
+
 import module1._homeworks.homework3.TaskCollections._
 import org.scalatest.flatspec.AnyFlatSpec
+
+import scala.collection.immutable.{List, Seq, Set, Vector}
 
 
 /**

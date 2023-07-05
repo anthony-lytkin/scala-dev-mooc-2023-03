@@ -1,3 +1,5 @@
+package scala.module1
+
 import module1._homeworks.homework1
 import org.scalatest.funsuite.AnyFunSuite
 
