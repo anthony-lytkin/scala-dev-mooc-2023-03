@@ -1,4 +1,5 @@
-package catstypes
+package module2.catstypes
+
 import cats.data.{Chain, Ior, Kleisli, NonEmptyChain, NonEmptyList, OptionT, Validated, ValidatedNec}
 import cats.Monoid
 import cats.implicits._
