@@ -1,4 +1,4 @@
-package catsconcurrency
+package module3.catsconcurrency
 
 import cats.implicits._
 import cats.effect.{Deferred, IO, IOApp, Ref, Resource}

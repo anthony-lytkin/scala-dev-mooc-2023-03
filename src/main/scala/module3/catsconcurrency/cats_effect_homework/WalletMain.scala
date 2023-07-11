@@ -1,4 +1,4 @@
-package catsconcurrency.cats_effect_homework
+package module3.catsconcurrency.cats_effect_homework
 
 import cats.effect.{IO, IOApp}
 import cats.implicits._

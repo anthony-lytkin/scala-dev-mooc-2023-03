@@ -1,4 +1,4 @@
-package catseffect
+package module3.catseffect
 
 import cats.effect.std.{Console, Semaphore, Supervisor}
 import cats.effect.unsafe.implicits.global

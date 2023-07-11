@@ -1,4 +1,4 @@
-package catsresources
+package module3.catsresources
 
 import cats.MonadError
 import cats.data.State

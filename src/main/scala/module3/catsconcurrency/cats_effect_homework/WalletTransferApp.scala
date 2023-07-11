@@ -1,10 +1,10 @@
-package catsconcurrency.cats_effect_homework
+package module3.catsconcurrency.cats_effect_homework
 
 import cats.Monad
 import cats.effect.kernel.Ref
 import cats.effect.{IO, IOApp}
 import cats.implicits._
-import catsconcurrency.cats_effect_homework.Wallet.{BalanceTooLow, WalletError}
+import Wallet.{BalanceTooLow, WalletError}
 import Wallet.{BalanceTooLow, WalletError}
 
 // Здесь мы хотим протестировать бизнес-логику использующую кошельки: функцию transfer.
