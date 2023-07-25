@@ -1,4 +1,4 @@
-package http4sdsl
+package module4.http4sdsl
 
 import cats.Functor
 import cats.data.{EitherT, OptionT, ReaderT}

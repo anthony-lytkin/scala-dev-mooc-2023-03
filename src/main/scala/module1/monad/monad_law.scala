@@ -1,4 +1,4 @@
-package monad
+package module1.monad
 
 object monad_law {
   //Monad law:
