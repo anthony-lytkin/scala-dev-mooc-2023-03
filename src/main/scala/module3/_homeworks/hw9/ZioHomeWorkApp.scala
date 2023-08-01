@@ -10,6 +10,6 @@ import zio.{ExitCode, UIO, URIO, ZIO}
 
 object ZioHomeWorkApp extends zio.App {
   override def run(args: List[String]): URIO[zio.ZEnv with Console, ExitCode] = {
-    loadConfigOrDefaut.map(println).exitCode
+    runApp.exitCode
   }
 }

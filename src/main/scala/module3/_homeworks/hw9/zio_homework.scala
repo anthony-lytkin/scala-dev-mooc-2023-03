@@ -64,7 +64,7 @@ package object zio_homework {
    */
 
 
-  def loadConfigOrDefaut: UIO[AppConfig] = {
+  def loadConfigOrDefault: UIO[AppConfig] = {
 
     class DefaultAppConfig(override val host: String, override val port: String) extends AppConfig(host, port) {
       override def toString: String = "Default " + super.toString
@@ -173,7 +173,7 @@ package object zio_homework {
    *
    */
 
-  lazy val appWithTimeLog: URIO[ConsoleLog with Clock with Random, Unit] = ConsoleLog.printEffectRunningTime(appSpeedUp)
+  lazy val appWithTimeLog: URIO[ConsoleLog with Clock with Random, Unit] = ConsoleLog.printEffectRunningTime(app)
 
   /**
    *
@@ -181,7 +181,7 @@ package object zio_homework {
    */
 
   lazy val runApp: URIO[zio.ZEnv, Unit] = {
-    val app: URIO[ConsoleLog with Clock with Random, Unit] = ConsoleLog.printEffectRunningTime(appWithTimeLog)
+    val app: URIO[ConsoleLog with Clock with Random, Unit] = appWithTimeLog
     app.provideCustomLayer(Random.live ++ ConsoleLog.live)
     // У меня тут что-то не так с окружением (не удалось добиться ConsoleLog with Clock, избавившись от Random)
     // так и не понял почему, хотелось бы тут уточнить. То есть я планировал вернуть URIO[ConsoleLog with Clock, Unit],
