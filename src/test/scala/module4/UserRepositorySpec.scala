@@ -3,14 +3,11 @@ package module4
 import zio.test.DefaultRunnableSpec
 import zio.test.ZSpec
 import zio.test._
-import module4.homework.dao.repository.UserRepository
 import zio.ZIO
-import homework.dao.entity.User
 import io.getquill.CompositeNamingStrategy2
 import io.getquill.Escape
 import io.getquill.Literal
 import zio.test.Assertion._
-import module4.homework.dao.entity.Role
 import zio.blocking.Blocking
 import zio.Layer
 import zio.test.environment.TestEnvironment
@@ -20,7 +17,8 @@ import zio.Task
 import zio.random.Random._
 import java.util.UUID
 import TestAspect._
-import module4.homework.dao.entity.UserId
+import module4._homeworks.homework.dao.entity.{Role, User, UserId}
+import module4._homeworks.homework.dao.repository.UserRepository
 
 
 object UserRepositorySpec extends DefaultRunnableSpec{

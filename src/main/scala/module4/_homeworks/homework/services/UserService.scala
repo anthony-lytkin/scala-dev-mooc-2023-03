@@ -1,16 +1,13 @@
-package module4.homework.services
+package module4._homeworks.homework.services
 
+import module4._homeworks.homework.dao.entity.{Role, RoleCode, User, UserToRole}
+import module4._homeworks.homework.dao.repository.UserRepository
 import zio.Has
 import zio.Task
-import module4.homework.dao.entity.User
-import module4.homework.dao.entity.Role
-import module4.homework.dao.repository.UserRepository
 import zio.ZIO
 import zio.RIO
-import module4.homework.dao.entity.UserToRole
 import zio.ZLayer
 import zio.macros.accessible
-import module4.homework.dao.entity.RoleCode
 import module4.phoneBook.db
 
 @accessible

@@ -1,4 +1,4 @@
-package module4.homework.dao.entity
+package module4._homeworks.homework.dao.entity
 
 case class Role(code: String, name: String)
 
