@@ -16,10 +16,19 @@ libraryDependencies += "org.typelevel" %% "cats-core" % "2.1.0"
 libraryDependencies += "org.typelevel" %% "cats-effect" % "3.4.5"
 libraryDependencies ++= Dependencies.zio
 libraryDependencies ++= Dependencies.zioConfig
+libraryDependencies ++= Dependencies.quill
+libraryDependencies ++= Dependencies.testContainers
 libraryDependencies += Dependencies.scalaTest
+libraryDependencies ++= Dependencies.circe
+libraryDependencies += Dependencies.liquibase
+libraryDependencies += Dependencies.zioHttp
+libraryDependencies += Dependencies.logback
+libraryDependencies ++= Dependencies.akkaContainers
+
 scalacOptions += "-Ymacro-annotations"
 libraryDependencies += "org.http4s" %% "http4s-client" % "0.23.18"
 libraryDependencies += "org.http4s" %% "http4s-dsl" % "0.23.18"
 libraryDependencies += "org.http4s" %% "http4s-ember-server" % "0.23.18"
 libraryDependencies += "org.http4s" %% "http4s-ember-client" % "0.23.18"
+
 testFrameworks := Seq(new TestFramework("zio.test.sbt.ZTestFramework"))
