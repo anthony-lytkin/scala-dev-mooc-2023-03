@@ -1,4 +1,4 @@
-package module3.catsconcurrency.cats_effect_homework
+package module3._homeworks.hw10
 
 import cats.effect.{IO, IOApp}
 import cats.implicits._
