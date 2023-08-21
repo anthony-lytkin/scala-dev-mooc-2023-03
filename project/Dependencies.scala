@@ -30,15 +30,35 @@ object Dependencies {
   )
 
   lazy val quill = Seq(
-    "io.getquill"          %% "quill-jdbc-zio" % "3.12.0",
-    "io.github.kitlangton" %% "zio-magic"      % "0.3.11"
+    "io.getquill" %% "quill-jdbc-zio" % "3.12.0",
+    "io.github.kitlangton" %% "zio-magic" % "0.3.11"
   )
 
   lazy val liquibase = "org.liquibase" % "liquibase-core" % LiquibaseVersion
 
-  lazy val  testContainers = Seq(
-    "com.dimafeng" %% "testcontainers-scala-postgresql" % "0.39.12"  % Test,
-    "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.39.12"  % Test
+  lazy val testContainers = Seq(
+    "com.dimafeng" %% "testcontainers-scala-postgresql" % "0.39.12" % Test,
+    "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.39.12" % Test
+  )
+
+  lazy val cats = Seq(
+    "org.typelevel" %% "cats-core" % "2.1.0",
+    "org.typelevel" %% "cats-effect" % "3.4.5",
+    "org.typelevel" %% "cats-effect-kernel" % "3.2.9"
+  )
+
+  lazy val fs2 = Seq(
+    "co.fs2" %% "fs2-core" % "3.6.1",
+    "co.fs2" %% "fs2-io" % "3.6.1"
+  )
+
+  lazy val http4s = Seq(
+    "org.http4s" %% "http4s-client" % "0.23.18",
+    "org.http4s" %% "http4s-dsl" % "0.23.18",
+    "org.http4s" %% "http4s-ember-server" % "0.23.18",
+    "org.http4s" %% "http4s-ember-client" % "0.23.18",
+    "org.http4s" %% "http4s-blaze-server" % "0.23.14",
+    "org.http4s" %% "http4s-blaze-client" % "0.23.14"
   )
 
   lazy val akkaVersion = "2.8.3"
@@ -69,7 +89,7 @@ object Dependencies {
 
   lazy val postgres = "org.postgresql" % "postgresql" % PostgresVersion
 
-  lazy val logback = "ch.qos.logback"  %  "logback-classic" % LogbackVersion
+  lazy val logback = "ch.qos.logback" % "logback-classic" % LogbackVersion
 
   lazy val zioHttp = "io.d11" %% "zhttp" % ZIOHttpVersion
 
@@ -77,6 +97,7 @@ object Dependencies {
     "io.circe" %% "circe-core" % CirceVersion,
     "io.circe" %% "circe-generic" % CirceVersion,
     "io.circe" %% "circe-parser" % CirceVersion,
+    "io.circe" %% "circe-literal" % CirceVersion,
     "io.circe" %% "circe-derivation" % "0.13.0-M4",
     "org.http4s" %% "http4s-circe" % "0.23.14"
   )
