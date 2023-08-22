@@ -1,7 +1,7 @@
-package module4._homeworks.homework.services
+package module4._homeworks.hw12.services
 
-import module4._homeworks.homework.dao.entity.{Role, RoleCode, User, UserToRole}
-import module4._homeworks.homework.dao.repository.UserRepository
+import module4._homeworks.hw12.dao.entity.{Role, RoleCode, User, UserToRole}
+import module4._homeworks.hw12.dao.repository.UserRepository
 import zio.Has
 import zio.Task
 import zio.ZIO

@@ -1,8 +1,8 @@
-package module4._homeworks.homework.dao.repository
+package module4._homeworks.hw12.dao.repository
 
 import zio.{Has, ULayer, ZIO, ZLayer}
 import io.getquill.context.ZioJdbc._
-import module4._homeworks.homework.dao.entity.{Role, RoleCode, User, UserId, UserToRole}
+import module4._homeworks.hw12.dao.entity.{Role, RoleCode, User, UserId, UserToRole}
 import zio.macros.accessible
 import module4.phoneBook.db
 

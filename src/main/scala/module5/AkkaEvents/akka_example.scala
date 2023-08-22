@@ -1,4 +1,4 @@
-package AkkaEvents
+package module5.AkkaEvents
 
 import akka.NotUsed
 import akka.actor.typed.scaladsl.{ActorContext, Behaviors}

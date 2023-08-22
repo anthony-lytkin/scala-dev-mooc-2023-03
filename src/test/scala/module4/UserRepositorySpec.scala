@@ -17,8 +17,8 @@ import zio.Task
 import zio.random.Random._
 import java.util.UUID
 import TestAspect._
-import module4._homeworks.homework.dao.entity.{Role, User, UserId}
-import module4._homeworks.homework.dao.repository.UserRepository
+import module4._homeworks.hw12.dao.entity.{Role, User, UserId}
+import module4._homeworks.hw12.dao.repository.UserRepository
 
 
 object UserRepositorySpec extends DefaultRunnableSpec{
