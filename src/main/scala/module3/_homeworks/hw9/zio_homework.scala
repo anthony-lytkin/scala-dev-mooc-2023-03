@@ -11,6 +11,7 @@ import zio.duration.durationInt
 import zio.random.Random
 import zio.{Has, IO, Layer, Task, UIO, ULayer, URIO, ZIO, ZLayer}
 
+import java.io.IOException
 import java.util.concurrent.TimeUnit
 import scala.language.postfixOps
 
@@ -27,7 +28,7 @@ package object zio_homework {
 
     val readConsole: URIO[Console, String] = zio.console.getStrLn.orDie
 
-    def writeToConsole(msg: String): URIO[Console, Unit] = zio.console.putStrLn(msg)
+    def writeToConsole(msg: String): URIO[Console, Unit] = zio.console.putStrLn(msg).orDie
 
     val consoleInputToInt: ZIO[Console, Throwable, Int] = readConsole.flatMap(n => ZIO.effect(n.toInt)) // Throwable намеренно ликвидирован
 

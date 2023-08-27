@@ -12,6 +12,7 @@ libraryDependencies ++= Dependencies.zio
 libraryDependencies ++= Dependencies.zioConfig
 libraryDependencies ++= Dependencies.quill
 libraryDependencies ++= Dependencies.testContainers
+libraryDependencies += Dependencies.postgres
 libraryDependencies += Dependencies.scalaTest
 libraryDependencies ++= Dependencies.circe
 libraryDependencies += Dependencies.liquibase

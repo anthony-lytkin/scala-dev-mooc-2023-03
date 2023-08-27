@@ -11,7 +11,7 @@ import cats.implicits._
 import org.http4s.ember.server.EmberServerBuilder
 import org.http4s.server.{AuthMiddleware, HttpMiddleware, Router}
 import com.comcast.ip4s.{Host, Port}
-import http4sdsl.Restfull
+//import http4sdsl.Restfull
 import Restfull1.User
 import org.typelevel.ci.CIStringSyntax
 
